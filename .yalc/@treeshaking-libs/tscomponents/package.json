@@ -1,0 +1,13 @@
+{
+  "name": "@treeshaking-libs/tscomponents",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "yalcSig": "6c8aa5557c56434a063b8979dd90f9f5"
+}

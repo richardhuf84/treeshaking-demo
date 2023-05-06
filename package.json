@@ -10,6 +10,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@treeshaking-libs/tsbutton": "file:.yalc/@treeshaking-libs/tsbutton",
+    "@treeshaking-libs/tscomponents": "file:.yalc/@treeshaking-libs/tscomponents",
     "acorn": "^8.8.2",
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
@@ -90,6 +92,7 @@
     "uri-js": "^4.4.1",
     "watchpack": "^2.4.0",
     "webpack": "^5.82.0",
+    "webpack-bundle-analyzer": "^4.8.0",
     "webpack-merge": "^5.8.0",
     "webpack-sources": "^3.2.3",
     "which": "^2.0.2",
@@ -97,7 +100,8 @@
   },
   "scripts": {
     "build": "webpack-cli build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze": "webpack --profile --json > stats.json"
   },
   "author": "",
   "license": "ISC",

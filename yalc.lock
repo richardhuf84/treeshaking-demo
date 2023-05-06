@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "packages": {
+    "@treeshaking-libs/tsbutton": {
+      "version": "0.0.1",
+      "signature": "863fbe2b73b774a2d7e4fb0365959228",
+      "file": true
+    },
+    "@treeshaking-libs/tscomponents": {
+      "version": "0.0.1",
+      "signature": "6c8aa5557c56434a063b8979dd90f9f5",
+      "file": true
+    }
+  }
+}

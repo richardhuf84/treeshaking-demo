@@ -1,0 +1,13 @@
+{
+  "name": "@treeshaking-libs/tsbutton",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "yalcSig": "863fbe2b73b774a2d7e4fb0365959228"
+}
