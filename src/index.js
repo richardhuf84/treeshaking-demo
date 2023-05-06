@@ -1,11 +1,16 @@
-import foo from './utils/foo.js';
-import app from './utils/app.js';
-import { add, subtract } from './utils/math.js';
+import { Button } from './Button';
+import { createRoot } from 'react-dom/client';
 
-const sumA = `2 + 1 = ${add(2, 1)}`;
-// const sumB = `2 - 1 = ${subtract(2, 1)}`;
+const App = () => (
+  <div>
+    <h1>
+      Tree Shaking 🌳
 
-const content =
-  `${sumA}`;
+      <Button>A button</Button>
+    </h1>
+  </div>
+)
 
-app(content)
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
+root.render(<App />);
